@@ -1,0 +1,10 @@
+{
+  "stylelintIntegration": true,
+  "eslintIntegration": true,
+  "printWidth": 120,
+  "singleQuote": true,
+  "bracketSpacing": true,
+  "jsxBracketSameLine": true,
+  "htmlWhitespaceSensitivity": "ignore",
+  "trailingComma": "none"
+}
