@@ -17,18 +17,18 @@ export default [
     path: '/login',
     component: () => import(/* webpackChunkName: "page" */ '@/views/Login/index')
   },
-  // 忘记密码页
-  {
-    name: 'forget',
-    path: '/forget',
-    component: () => import(/* webpackChunkName: "page" */ '@/views/ForgetPage/index')
-  },
-  // 注册页
-  {
-    name: 'reg',
-    path: '/reg',
-    component: () => import(/* webpackChunkName: "page" */ '@/views/RegPage/index')
-  }
+  // // 忘记密码页
+  // {
+  //   name: 'forget',
+  //   path: '/forget',
+  //   component: () => import(/* webpackChunkName: "page" */ '@/views/ForgetPage/index')
+  // },
+  // // 注册页
+  // {
+  //   name: 'reg',
+  //   path: '/reg',
+  //   component: () => import(/* webpackChunkName: "page" */ '@/views/RegPage/index')
+  // }
   // {
   //   path: '*',
   //   redirect: '/login'

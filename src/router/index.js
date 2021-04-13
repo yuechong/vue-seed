@@ -10,10 +10,10 @@
  import { afterEach, beforeEach } from './intercepter';
  
  Vue.use(VueRouter);
- const router = new Router({
+ const router = new VueRouter({
    mode: 'history',
    base: process.env.BASE_URL,
-   routes: [...routerMap,...routerApp]
+   routes: [...routerMap,routerApp()]
  });
  
  // 路由拦截
