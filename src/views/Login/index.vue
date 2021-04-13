@@ -44,7 +44,7 @@
           </div>
           <a-form-model-item>
             <a-button type="danger" block class="login-form-button" :loading="loading" @click="login">
-              {{ $t('login.form.login') }}
+              {{'login.form.login' }}
             </a-button>
           </a-form-model-item>
           <a-divider />
@@ -60,10 +60,8 @@
 
 <script>
 import { mapActions, mapGetters } from 'vuex';
-import i18nMix from '@/mixins/i18n.mixins';
 export default {
   name: 'LoginPage',
-  mixins: [i18nMix],
   data() {
     return {
       loading: false,

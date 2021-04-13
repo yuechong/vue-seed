@@ -34,12 +34,10 @@
 
 <script>
 import { mapGetters, mapActions } from 'vuex';
-import i18nMix from '@/mixins/i18n.mixins';
 import personJpg from '../../assets/images/person.jpg';
 
 export default {
   name: 'theHeader',
-  mixins: [i18nMix],
   data() {
     return {};
   },
