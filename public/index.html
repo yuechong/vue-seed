@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <link rel="preconnect" href="https://cdn.bootcdn.net/" crossorigin />
+    <link rel="dns-prefetch" href="https://cdn.bootcdn.net/" />
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/ant-design-vue/1.7.2/antd.min.css"/>
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/print-js/1.5.0/print.min.css" />
+    <title>杰牌传动</title>
+    <script>
+      // // rem  1rem =100px
+      // (function() {
+      //   const baseSize = 100;
+      //   // 设置 rem 函数
+      //   function setRem() {
+      //     // 当前页面宽度相对于 1920宽的缩放比例，可根据自己需要修改。
+      //     const scale = document.documentElement.clientWidth / 1920;
+      //     // 设置页面根节点字体大小（“Math.min(scale, 2)” 指最高放大比例为2，可根据实际业务需求调整）
+      //     document.documentElement.style.fontSize = baseSize * Math.min(scale, 2) + 'px';
+      //   }
+      //   // 初始化
+      //   setRem();
+      //   // 改变窗口大小时重新设置 rem
+      //   window.onresize = function() {
+      //     setRem();
+      //   };
+      // })();
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <strong>您的浏览器关闭了javascript功能</strong>
+    </noscript>
+    <div id="app">
+      <div id="datav-loading" style="background: #0f2a42;height:100vh;">
+        <a target="_blank" href="javascript:;">
+          <img class="datav-logo" src="//img.alicdn.com/tfs/TB1RzYryY9YBuNjy0FgXXcxcXXa-300-300.gif" />
+          <img class="text-logo" src="//img.alicdn.com/tfs/TB1EBjryY9YBuNjy0FgXXcxcXXa-500-129.png" width="100" />
+        </a>
+      </div>
+    </div>
+    <!-- built files will be auto injected -->
+
+    <% for (let i in htmlWebpackPlugin.options.cdn) { %>
+    <script type="text/javascript" src="<%= htmlWebpackPlugin.options.cdn[i] %>"></script>
+    <% } %>
+    <script src="https://cdn.bootcdn.net/ajax/libs/print-js/1.5.0/print.min.js"></script>
+  </body>
+</html>
